@@ -6,25 +6,22 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-const testString = "Hello to you "
+const testString = "Hello to you f g h         "
 console.log(testString)
 console.log(reverse(testString))
+// debugger;
 
 function reverse(str) {
-  let reverseString = ""
+  // let reverseString = ""
+  //
+  // reverseString = str.split("").reduce((reversed, character) => {
+  //   return character + reversed;
+  // }, "");
+  //
+  // return reverseString
 
-  // const len = str.length
-  // console.log(len)
-  // for (let i = 1; i <= len; i++) {
-  //   reverseString += str[len - i]
-  // }
-
-  for (character of str) {
-    reverseString = character + reverseString
-    debugger
-  }
-
-  return reverseString
+  debugger;
+  return str.split('').reduce((rev, char) => char + rev, '');
 }
 
 module.exports = reverse;
